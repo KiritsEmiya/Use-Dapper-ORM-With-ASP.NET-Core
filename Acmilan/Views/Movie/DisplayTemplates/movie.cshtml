@@ -1,0 +1,13 @@
+﻿@model Acmilan.Models.Movie
+
+<tr>
+    <th scope="row">@Model.Id</th>
+    <td>@Model.CinemaId</td>
+    <td>@Model.Name</td>
+    <td>@Model.Starring</td>
+    <td>@Model.ReleaseDate</td>
+    <td>
+        <a asp-controller="Movie" asp-action="Edit" asp-route-id="@Model.Id"><button type="button" class="btn btn-outline-info">编辑</button></a>
+        <a asp-controller="Movie" asp-action="Delete" asp-route-id="@Model.Id"><button type="button" class="btn btn-outline-warning">删除</button></a>
+    </td>
+</tr>

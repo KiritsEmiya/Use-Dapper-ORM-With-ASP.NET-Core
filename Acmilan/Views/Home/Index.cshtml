@@ -1,0 +1,22 @@
+﻿@using Acmilan.Models
+@model IEnumerable<Cinema>
+
+<div class="container">
+    <div class="row">
+        <table class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">Id</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Location</th>
+                    <th scope="col">Capacity</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @Html.DisplayForModel()
+            </tbody>
+        </table>
+        <a asp-action="Add"><button type="button" class="btn btn-primary">添加影院</button></a>
+    </div>
+</div>

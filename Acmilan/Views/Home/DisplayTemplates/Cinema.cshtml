@@ -1,0 +1,12 @@
+﻿@model Acmilan.Models.Cinema
+
+<tr>
+    <th scope="row">@Model.Id</th>
+    <td>
+        <a asp-controller="Movie" asp-action="Index" asp-route-cinemaId="@Model.Id">@Model.Name</a>
+    </td>
+    <td>@Model.Location</td>
+    <td>@Model.Capacity</td>
+    <td>
+    </td>
+</tr>
